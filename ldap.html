@@ -1,0 +1,15 @@
+<h3>LDAP/Email Plist Generator</h3>
+<form method="get" action="plistGenerator/plistGenerator.php">
+            <center><label for="ldapserverprefix">LDAP Server:</label>
+            <input type="text" placeholder="ldap-example" class="form-control flat" id="ldapserverprefix" name="ldapserverprefix" />.<input type="text" placeholder="com" class="form-control flat" id="ldapserversuffix" name="ldapserversuffix" /><br />
+            <label for="mailusername">Email Username:</label>
+            <input type="text" placeholder="joe" class="form-control flat" id="mailusername" name="mailusername" />@<input type="text" placeholder="example.com" class="form-control flat" id="mailserver" name="mailserver" /><br />
+            <label for="pass">Email Password:</label>
+            <input type="mailpassword" placeholder="Pass" class="form-control flat" id="mailpassword" name="mailpassword" /><br />
+            <label for="declaration">About Plist:</label>
+            <input type="text" placeholder="about" class="form-control flat" id="declaration" name="declaration" /><br />
+            <input type="hidden" value="2" id="mode" name="mode" /><br />
+            <input type="submit" value="Generate" class="btn btn-lg btn-danger" name="submit" />
+            </form>
+    
+    <a href="/" class="btn btn-lg btn-warning">Go Back</a>
