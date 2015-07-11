@@ -7,7 +7,7 @@ Currently supports two types of configuration:
 Adding more materials soon...
 
 ## Contribution
-As everyone knows, that Apple is having awefully written developement guide for their plist/mobileconfig files. If you have any iOS MDM/iOS Enterprise management papers, please feel free to write an issue and/or send them directly to me at frjalex[at]github.com.
+As everyone knows, that Apple is having awefully written developement guide for their plist/mobileconfig files. If you have any iOS MDM/iOS Enterprise management papers, please feel free to write an issue and/or send them directly to me at frjalex[at]gmail.com.
 
 ## Installation Requirements
 * Apache 2 webserver properly running on a Linux host and configured.
