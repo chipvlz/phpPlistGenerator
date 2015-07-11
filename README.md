@@ -17,7 +17,7 @@ As everyone knows, that Apple is having awefully written developement guide for 
 
 ## License
 All contents opensourced under GNU/GPLv2.
-Unless noted, everything are copyright of the author and phpPlistGenerator's designated contributers.
+Unless noted, everything are copyrights of the author and phpPlistGenerator's designated contributers.
 
 ## DeBUGGING
 Please feel free to open up a pull request and/or write an issue to send to me. I will be constantly adding more materials to this project soon.
