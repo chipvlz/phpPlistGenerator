@@ -1,5 +1,10 @@
 <?php
 
+//imports external libraries(deprecated)
+require_once '_getVars.php';
+require_once '_function.php';
+require_once '_header.php';
+
 /* functions
 */
 
