@@ -34,7 +34,6 @@ return $iPhoneSignedResponse;
 //variables $server, $pass, $username $declaration $currentString needed
 //C48E8706C2=currentString
 function vpnPlistGenerator($server, $pass, $username, $declaration, $currentString) {
-    $mobileconfig = fopen("mobileconfig/com.phpplistgenerator.vpn.".$currentString.".mobileconfig","w") or die("unable to generate mobileconfig file.");
     $mcdata = '
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -109,11 +108,8 @@ function vpnPlistGenerator($server, $pass, $username, $declaration, $currentStri
 </dict>
 </plist>
             ';//<-end of $mcdata, no touch!
-    
-fwrite($mobileconfig, $mcdata);
-fclose($myfile);
-$filename = 'mobileconfig/com.phpplistgenerator.vpn.'.$currentString.'.mobileconfig';
-return $filename or die("unable to fetch the mobileconfig file\n");
+  
+return $mcdata or die("unable to fetch the mobileconfig file\n");
 }
 //end of VPN Plist Generator
 
@@ -122,7 +118,6 @@ return $filename or die("unable to fetch the mobileconfig file\n");
 //Inserts the LDAP directory server in to iOS device and sets up a mail address automatically
 //requires vars $declaration $currentString $ldapserver $imapserver $smtpserver $mailusername $mailpassword $ldapserverpreffix $ldapserversuffix $mailuseraddress
 function ldapPlistGenerator ($declaration, $currentString, $ldapserver, $ldapserverprefix,$ldapserversuffix,$mailserver, $mailusername, $mailuseraddress, $mailpassword){
- $mobileconfig = fopen("mobileconfig/com.phpplistgenerator.ldap.".$currentString.".mobileconfig","w") or die("unable to generate mobileconfig file.");
     $mcdata = '
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple/DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -218,10 +213,8 @@ function ldapPlistGenerator ($declaration, $currentString, $ldapserver, $ldapser
 </plist>
             ';//<-end of $mcdata, no touch!
     
-fwrite($mobileconfig, $mcdata);
-fclose($myfile);
-$filename = 'mobileconfig/com.phpplistgenerator.ldap.'.$currentString.'.mobileconfig';
-return $filename or die("unable to fetch the mobileconfig file\n");
+
+return $mcdata;
 }
 //end of LDAP Plist Generator
 
