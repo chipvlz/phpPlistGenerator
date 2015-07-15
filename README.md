@@ -1,4 +1,4 @@
-# PHP Plist Generator
+# P:neckbeard:H:neckbeard:P:neckbeard: Plist Generator
 PHP scripts used to generate Plist file for over-air iOS installation.
 Currently supports two types of configuration:
 * PPTP VPN
